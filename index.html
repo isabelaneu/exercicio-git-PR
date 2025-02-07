@@ -41,6 +41,9 @@
         .btn:hover {
             background-color: #45a049;
         }
+        .contato{
+            height: 5vh;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +68,22 @@
     </section>
 
     <button class="btn">Clique aqui para aprender mais!</button>
+    <button onclick="document.getElementById('modal').showModal()" class="contato"> Informações para contato</button>
+    <dialog id="modal">
+        <h1>Informações de conta</h1>
+        <p>📞 Telefone: (11) 98765-4321
+            <br>
+            📧 E-mail: contato@solucaotech.com.br
+            <br>
+            📍 Endereço: Avenida das Inovações, 456, Centro, São Paulo - SP, CEP 01010-010
+            <br>
+            🌐 Site: www.solucaotech.com.br</p>
+        <button onclick="document.getElementById('modal').close()">Fechar</button>
+    </dialog>
 </main>
+
+
+
 
 <footer>
     <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
